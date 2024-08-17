@@ -5,7 +5,7 @@ import { Github, Instagram, Linkedin } from 'lucide-react';
 
 export default function Bio() {
   return (
-    <div className="bg-gradient-to-tr from-zinc-50 via-white to-slate-100 min-h-screen flex flex-col items-center text-zinc-900 py-12">
+    <div className="bg-gradient-to-tr from-zinc-50 via-white to-slate-100 min-h-screen flex flex-col items-center text-zinc-900 py-20">
       <div className="flex flex-col items-center flex-grow justify-center">
         <motion.img
           src="/perfil.png"
