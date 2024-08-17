@@ -2,10 +2,25 @@
 
 import { motion } from 'framer-motion';
 import { Github, Instagram, Linkedin } from 'lucide-react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Bio() {
+  const handleDevelopmentClick = () => {
+    toast.info('Em desenvolvimento!', {
+      position: 'top-center',
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+  };
+
   return (
     <div className="bg-gradient-to-tr from-zinc-50 via-white to-slate-100 min-h-screen flex flex-col items-center text-zinc-900 py-20">
+      <ToastContainer />
       <div className="flex flex-col items-center flex-grow justify-center">
         <motion.img
           src="/perfil.png"
@@ -30,8 +45,8 @@ export default function Bio() {
           transition={{ delay: 0.6, duration: 0.5 }}
         >
           <motion.a
-            className="bg-gradient-to-r from-orange-300/95 via-orange-400 to-orange-500 w-64 py-3 rounded-sm mx-auto text-center"
-            href="/"
+            className="bg-gradient-to-r from-orange-300/95 via-orange-400 to-orange-500 w-64 py-3 rounded-sm mx-auto text-center cursor-pointer"
+            onClick={handleDevelopmentClick}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 0.5 }}
@@ -39,7 +54,7 @@ export default function Bio() {
             Conheça meu trabalho
           </motion.a>
           <motion.a
-            className="bg-gradient-to-r from-orange-300/95 via-orange-400 to-orange-500 w-64 py-3 rounded-sm mx-auto text-center mt-2"
+            className="bg-gradient-to-r from-orange-300/95 via-orange-400 to-orange-500 w-64 py-3 rounded-sm mx-auto text-center mt-2 cursor-pointer"
             href="https://api.whatsapp.com/send?phone=558894422223"
             target="_blank"
             initial={{ opacity: 0, y: 20 }}
@@ -49,8 +64,8 @@ export default function Bio() {
             Contato direto no WhatsApp
           </motion.a>
           <motion.a
-            className="bg-gradient-to-r from-orange-300/95 via-orange-400 to-orange-500 w-64 py-3 rounded-sm mx-auto text-center mt-2"
-            href="/curriculo"
+            className="bg-gradient-to-r from-orange-300/95 via-orange-400 to-orange-500 w-64 py-3 rounded-sm mx-auto text-center mt-2 cursor-pointer"
+            onClick={handleDevelopmentClick}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.2, duration: 0.5 }}
