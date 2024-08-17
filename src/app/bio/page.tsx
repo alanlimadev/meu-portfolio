@@ -47,8 +47,8 @@ export default function Bio() {
           <motion.a
             className="bg-gradient-to-r from-orange-300/95 via-orange-400 to-orange-500 w-64 py-3 rounded-sm mx-auto text-center cursor-pointer hover:shadow-md hover:shadow-zinc-300 transition-all duration-300 ease-in-out"
             onClick={handleDevelopmentClick}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ delay: 0.8, duration: 0.5 }}
           >
             Conheça meu trabalho
@@ -57,8 +57,8 @@ export default function Bio() {
             className="bg-gradient-to-r from-orange-300/95 via-orange-400 to-orange-500 w-64 py-3 rounded-sm mx-auto text-center cursor-pointer hover:shadow-md hover:shadow-zinc-300 transition-all duration-300 ease-in-out"
             href="https://api.whatsapp.com/send?phone=558894422223"
             target="_blank"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ delay: 1.0, duration: 0.5 }}
           >
             Contato direto no WhatsApp
@@ -66,8 +66,8 @@ export default function Bio() {
           <motion.a
             className="bg-gradient-to-r from-orange-300/95 via-orange-400 to-orange-500 w-64 py-3 rounded-sm mx-auto text-center cursor-pointer hover:shadow-md hover:shadow-zinc-300 transition-all duration-300 ease-in-out"
             onClick={handleDevelopmentClick}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ delay: 1.2, duration: 0.5 }}
           >
             Meu currículo
