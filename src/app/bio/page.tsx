@@ -89,7 +89,7 @@ export default function Bio() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.6, duration: 0.5 }}
         >
-          <Instagram className="text-zinc-700 w-5" />
+          <Instagram className="text-zinc-700 w-5 hover:text-orange-700" />
         </motion.a>
         <motion.a
           href="https://www.github.com/alanlimadev/"
@@ -100,7 +100,7 @@ export default function Bio() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.9, duration: 0.5 }}
         >
-          <Github className="text-zinc-700 w-5" />
+          <Github className="text-zinc-700 w-5 hover:text-orange-700" />
         </motion.a>
         <motion.a
           href="https://www.linkedin.com/in/alanlimadev/"
@@ -111,7 +111,7 @@ export default function Bio() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 2, duration: 0.5 }}
         >
-          <Linkedin className="text-zinc-700 w-5" />
+          <Linkedin className="text-zinc-700 w-5 hover:text-orange-700" />
         </motion.a>
       </motion.footer>
     </div>
