@@ -39,13 +39,13 @@ export default function Bio() {
           @alanlimadev
         </motion.h1>
         <motion.div
-          className="mt-10 text-white flex flex-col text-sm"
+          className="mt-10 text-white flex flex-col text-sm gap-3"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.5 }}
         >
           <motion.a
-            className="bg-gradient-to-r from-orange-300/95 via-orange-400 to-orange-500 w-64 py-3 rounded-sm mx-auto text-center cursor-pointer"
+            className="bg-gradient-to-r from-orange-300/95 via-orange-400 to-orange-500 w-64 py-3 rounded-sm mx-auto text-center cursor-pointer hover:shadow-md hover:shadow-zinc-300 transition-all duration-300 ease-in-out"
             onClick={handleDevelopmentClick}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -54,7 +54,7 @@ export default function Bio() {
             Conheça meu trabalho
           </motion.a>
           <motion.a
-            className="bg-gradient-to-r from-orange-300/95 via-orange-400 to-orange-500 w-64 py-3 rounded-sm mx-auto text-center mt-2 cursor-pointer"
+            className="bg-gradient-to-r from-orange-300/95 via-orange-400 to-orange-500 w-64 py-3 rounded-sm mx-auto text-center cursor-pointer hover:shadow-md hover:shadow-zinc-300 transition-all duration-300 ease-in-out"
             href="https://api.whatsapp.com/send?phone=558894422223"
             target="_blank"
             initial={{ opacity: 0, y: 20 }}
@@ -64,7 +64,7 @@ export default function Bio() {
             Contato direto no WhatsApp
           </motion.a>
           <motion.a
-            className="bg-gradient-to-r from-orange-300/95 via-orange-400 to-orange-500 w-64 py-3 rounded-sm mx-auto text-center mt-2 cursor-pointer"
+            className="bg-gradient-to-r from-orange-300/95 via-orange-400 to-orange-500 w-64 py-3 rounded-sm mx-auto text-center cursor-pointer hover:shadow-md hover:shadow-zinc-300 transition-all duration-300 ease-in-out"
             onClick={handleDevelopmentClick}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
